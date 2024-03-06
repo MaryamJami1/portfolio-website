@@ -8,22 +8,22 @@
 
 }
 
+/* navbar */
+
 .navbar {
    height: 70px;
    width: 100%;
    background-color: rgb(205, 89, 47);
-
 
 }
 
 #name {
    color: #fff;
    padding: 15px 0px 10px 30px;
-   width: 50%;
+   width: 40%;
    font-size: 28px;
    position: absolute;
    text-shadow: 3px 3px 5px #000000ea;
-
 
 }
 
@@ -32,11 +32,12 @@
 }
 
 .anchor {
-   position: relative;
-   padding: 20px;
-   left: 45%;
-   width: 50%;
 
+   position: absolute;
+   top: 20px;
+   width: 50%;
+   height: 30px;
+   margin-left: 620px;
 }
 
 .anchor a {
@@ -46,11 +47,95 @@
    font-weight: 900;
    padding-left: 25px;
    text-shadow: 3px 3px 5px #000000ea;
+
 }
 
 
 .anchor a:hover {
    color: rgb(240, 180, 159);
+}
+
+
+/* navbar button */
+
+.dropbtn {
+   color: white;
+   margin-left: 220px;
+   margin-right: 15px;
+   margin-top: 10px;
+   padding: 10px;
+   padding-left: 40px;
+   padding-right: 45px;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   border-radius: 30px;
+   background-color: rgb(205, 89, 47);
+   display: none;
+}
+
+.dropbtn i {
+   font-size: 30px;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgb(205, 89, 47);
+   min-width: 100%;
+   z-index: 1;
+
+}
+
+.dropdown {
+   position: relative;
+   display: inline;
+
+}
+
+.dropdown-content a {
+ color: #fff;
+   margin-left: 0px;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   font-weight: bold;
+}
+
+.dropdown-content a:hover {
+   background-color: #f9f9f9;
+   border-radius: 18px;
+   width: 120px;
+   color: #0f0f0f;
+   text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown:hover .dropbtn {
+   color: white;
+   border-radius: 30px;
+   text-decoration: underline;
+   text-underline-offset: 10px;
+   font-weight: bolder;
+}
+
+/* responsive navbar button */
+
+@media (max-width:400px) {
+
+   .dropbtn {
+      display: initial;
+   }
+
+
+   #name {
+      font-size: 20px;
+      padding: 20px;
+   }
+
 }
 
 /* navbar end */
@@ -114,6 +199,16 @@
 
 }
 
+/* responsive icons */
+@media(max-width:400px){
+
+   .social_icon {
+      height: 70px;
+      font-size: 18px;
+      margin: 20px 0px 30px 0px;
+   
+   }
+}
 
 
 /* experience */
@@ -199,6 +294,8 @@
    font-size: 21px;
 }
 
+/* skills */
+
 
 .skills {
    padding: 40px 0px 40px 20px;
@@ -233,6 +330,9 @@ ul {
    font-size: 20px;
 }
 
+/* interests */
+
+
 .interest {
    padding: 90px 0px 90px 20px;
 }
@@ -253,6 +353,7 @@ ul {
    font-size: 20px;
 }
 
+/* awards */
 
 .awards {
    padding: 50px 0px 50px 20px;
@@ -272,6 +373,8 @@ ul {
    color: gold;
 }
 
+
+/* footer */
 .section {
    height: 290px;
    width: 100%;
@@ -280,7 +383,7 @@ ul {
 }
 
 .footer_content {
-   height: 100%;
+   height: 45%;
    width: 35%;
 
 }
@@ -316,7 +419,7 @@ ul {
 
 .footer_content2 {
 
-   height: 100%;
+   height: 45%;
    width: 28%;
 
 }
@@ -362,4 +465,79 @@ ul {
    color: #fff;
    font-size: 15px;
    padding-left: 135px;
+}
+
+
+/* responsive footer */
+
+@media (max-width:400px) {
+   .section {
+      height: 1000px;
+      flex-direction: column;
+
+   }
+
+   .footer_content {
+
+      width: 45%;
+   }
+
+   #footer_h3 {
+      font-size: 25px;
+
+
+   }
+
+   #footer_para {
+      font-size: 15px;
+      padding-left: 20px;
+   }
+
+   #footer_para_icon i {
+
+      padding-top: 10px;
+      padding-left: 12px;
+      font-size: 20px;
+      margin-left: 10px;
+   }
+
+
+
+
+   .footer_content2 {
+      height: 40%;
+      width: 48%;
+   }
+
+   .footer_anchor a {
+      margin-left: 30px;
+
+   }
+
+
+   .footer_content3 {
+      height: 50%;
+      width: 45%;
+
+   }
+
+
+   #Location {
+      padding-left: 30px;
+
+   }
+
+   #Location_h1 {
+      padding-left: 30px;
+   }
+
+   #Email_h1 {
+      padding-left: 30px;
+   }
+
+   #mail {
+      padding-left: 30px;
+   }
+
+
 }
